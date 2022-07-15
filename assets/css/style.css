@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color:rgb(241, 224, 206);
+}
+
+/* apply styles to <header> */
+header {
+  padding: 20px 35px;
+  background-color: darkslategrey;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color:rgb(236, 141, 58);
+  margin: 0;
+  display: inline;
+}
+
+/* style the navigation bar */
+header a {
+  color:rgb(236, 141, 58);
+  text-decoration: none;
+}
+
+header nav {
+  float: right;
+  margin: 7px 0;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  margin: 0 25px;
+  font-weight: lighter;
+  font-size: 22px;
+}
