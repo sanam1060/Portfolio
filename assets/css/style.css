@@ -52,7 +52,6 @@ header nav ul li a {
 header nav ul li a:hover {
   background: rgb(236, 141, 58);
   color: darkslategrey;
-  
 }
 /* Navigation bar style end */
 
@@ -174,11 +173,19 @@ footer h2 {
 /* Contact me info style start */
 .contact-me{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .contact-method{
   flex: 1;
+}
+
+.contact-method h3{
+  text-align: center;
+}
+
+.contact-method p{
+  text-align: center;
 }
 
 /* Contact me info style end */
