@@ -114,44 +114,78 @@ footer h2 {
   font-size: x-large;
 }
 
-.work-image{
+.projects{
   width: 70%;
   padding: 10px 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; 
+  justify-content: space-between; 
 }
 
-.featured-project {
-    width: 100%;
-    height: auto;
-    flex: 2;
+.projects img:hover {
+  opacity: .5;
 }
 
-.placeholder-image {
-  
+.featured-project{
+  position: relative;
+  text-align: center; 
+}
+
+.featured-project-image {
+  width: 90%;
+  height: auto;
+  flex: 2;
+}
+
+.featured-project-description{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  background-color: rgb(236, 141, 58);
+  padding: 10px 15px;
+  width: 150px;
+  color: darkslategrey;
+  text-align: left;
+}
+
+.other-projects{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.other-projects-description {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  background-color: rgb(236, 141, 58);
+  padding: 10px 15px;
+  width: 150px;
+  color: darkslategrey;
+  text-align: left;
+}
+
+.other-projects {
   flex: 1;
   padding: 10px 20px;
 }
 
 /* Contact me info style start */
-
-.contact-me-content nav ul li {
-  display: inline;
-}
-
 .contact-me-content a {
   color:darkslategrey;
   text-decoration: none;
 }
 
+.contact-me-content nav ul li {
+  display: inline;
+}
+
 .contact-me-content nav ul li a {
-  margin: 0 30px;
+  margin: 0 25px;
   font-weight: lighter;
   font-size: 22px;
   border-bottom: solid 3px darkslategrey;
 }
-
 
 /* Contact me info style end */
 /* Portfolio sections style end */
