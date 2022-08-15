@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* font families used in this project */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,15 +13,16 @@ body {
 header {
   padding:100px 35px 30px 35px;
   background-color: darkslategrey;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+/* Sanam Ganjian */
 header h1 {
   font-size: 36px;
   font-weight: bold;
   display: inline;
-}
-
-header h1 a{
   background-color: rgb(236, 141, 58);
   color: darkslategrey;
   padding: 15px;
@@ -73,40 +75,40 @@ footer h2 {
 /* Hero style start */
 .hero {
   background-color:rgb(236, 141, 58); 
-  background-image: url(../images/sanam-profile.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  text-align: center;
   height: 314px;
   position: relative;
 }
 
+/* Create rounded image */
+.hero img{
+  border-radius: 50%;
+}
+
 .hero-text {
+  color:rgb(236, 141, 58);
   background-color: darkslategrey;
   padding: 15px;
   float: right;
   position: absolute;
   right: 40px;
   bottom: 40px;
-}
-
-.hero h2{
-  color:rgb(236, 141, 58);
+  text-align: center;
 }
 /* Hero style end */
 
 /* Portfolio sections style start*/
 .portfolio-sections{
   background-color: bisque;
+  color: darkslategrey;
+  padding: 20px 0px;
   display: flex;
   width: 100%;
-  justify-content: left;
-  color: darkslategrey;
-  padding: 20px 0 20px 0;
 }
 
 .portfolio-section-title{
   width: 314px;
-  padding: 20px 20px 20px 0;
+  padding: 10px 20px;
   text-align: end;
   font-size: x-large;
   border-right: 5px solid rgb(236, 141, 58);
@@ -120,25 +122,23 @@ footer h2 {
 }
 
 .projects{
-  width: 70%;
-  padding: 10px 20px;
+  flex-basis: 70%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content:space-around;
 }
 
 .projects img:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.featured-project{
+.featured-project-image{
   position: relative;
+  padding: 20px;
 }
 
-.featured-project-image {
-  width: 90%;
-  height: auto;
-  flex: 2;
+.featured-project-image img{
+  max-width: 90%;
 }
 
 .featured-project-description{
@@ -146,9 +146,9 @@ footer h2 {
   background-color: rgb(236, 141, 58);
   padding: 10px 15px;
   width: 200px;
-  bottom: 4px;
   color: darkslategrey;
   text-align: right;
+  bottom: 24px;
 }
 
 .other-projects{
@@ -162,12 +162,7 @@ footer h2 {
   width: 200px;
   color: darkslategrey;
   text-align: right;
-  bottom: 14px;
-}
-
-.other-projects {
-  flex: 1;
-  padding: 10px 20px;
+  bottom: 4px;
 }
 
 /* Contact me info style start */
@@ -180,12 +175,16 @@ footer h2 {
   flex: 1;
 }
 
-.contact-method h3{
-  text-align: center;
+.contact-method a{
+  padding: 20px 30px;
+  font-size: x-large;
+  text-decoration: none;
+  color:darkslategrey; ;
 }
 
-.contact-method p{
-  text-align: center;
+.contact-method a:hover{
+  background: darkslategrey;
+  color: bisque;
 }
 
 /* Contact me info style end */
@@ -193,6 +192,55 @@ footer h2 {
 
 /* Media query for smaller desktop screens and smaller */
 @media screen and (max-width: 980px) {
-    /* this will be applied on any screen smaller than 980px */
- 
+  /* this will be applied on any screen smaller than 980px */
+
+  header{
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 70%;
+    text-align: center;
+    font-size: 45px;
+  }
+
+  header nav ul {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+
+  header nav ul li a{
+    font-size: 25px;
+  }
+
+  .portfolio-section-title{
+    font-size: 35px;
+    width: 60%;
+  }
+
+  .hero-text{
+    font-size: 20px;
+    bottom: 0;
+    right: 0;
+  }
+
+  footer h2, footer div {
+    text-align: center;    
+    width: 100%;
+  }
+
+}
+
+/* Media query for tabltes and smaller */
+@media screen and (max-width: 768px) {
+  /* this will be applied on any screen between 768px and 575px */
+
+}
+
+/* Media query for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+
 }

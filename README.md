@@ -1,13 +1,13 @@
 # Challenge 2 - Portfolio
 
-## Purpose (Needs to be updated)
-Hello and welcome to my portfolio where I showcase my bootcamp projects. 
+## Purpose
+Hello and welcome to the landing page of my responsive portfolio where I showcase my HTML and CSS skills.
 
 ## Screenshot of the project (Needs to be updated)
-![screenshot of Password Generator](./assets/images/Password-generator.png)
+![screenshot of Portfolio project](./assets/images/portfolio-screenshot.png)
 
-## Future Improvements (Needs to be updated)
-This website can be more user interactive by introcuding some JavaScript. Also the color pallet I chose is not 
+## Future Improvements 
+Navigation bar and portfolio-sections could use some improvements when viewed on smaller screens. 
 
 ## Built with
 * HTML
@@ -17,4 +17,4 @@ This website can be more user interactive by introcuding some JavaScript. Also t
 https://sanam1060.github.io/Portfolio/
 
 ## Contribution
-Made with ❤️ by Sanam G - July 2022
+Made with ❤️ by Sanam G - Aug. 2022
